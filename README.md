@@ -1,3 +1,5 @@
+**Access the documentation on Github Pages:** https://iyenal.github.io/gen7engine-docs/
+
 ![](icon.png)
 
 # **Gen7 Engine Documentation**
