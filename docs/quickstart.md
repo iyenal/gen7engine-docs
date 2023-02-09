@@ -12,7 +12,7 @@ You'll find several windows, each dedicated to a part of your project! Let's see
 
 > To save, use Ctrl+S in the Script Editor to save the script, and the same key in Visual Programming Editor to save the blocks logic .
 > Warning, any save in the Script Editor will overwrite the Visual Programming Editor logic (which is translated to Python at every save), and same for the VPE.
-> They're not complimentary. However you can integrate Python code into your logic blocks with the Python block.
+> They're not complementary. However you can integrate Python code into your logic blocks with the Python block.
 
 - Graphics Editor:
 	- Top buttons: Preview (refresh below preview), Play, Automatic Preview (to automatically refresh the game preview at any change), and Graphics rendering properties
