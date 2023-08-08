@@ -1,4 +1,4 @@
-# **Release Notes**
+# Release Notes
 
 Full release information can be found in the release Discord server: https://discord.gg/pXdeUqb
 
