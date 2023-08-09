@@ -1,6 +1,7 @@
 - Getting started
   - [Quick start](quickstart.md)
   - [Changelog](releasenotes.md)
+  - [General Info](generalinfo.md)
 - Glossary
   - [Methods](glossary_methods.md)
   - [Objects](glossary_objects.md)
