@@ -1,4 +1,5 @@
 **Access the documentation on Github Pages:** https://iyenal.github.io/gen7engine-docs/
+**Get Gen7 Engine on** https://gen7.idpowered.com
 
 ![](icon.png)
 
@@ -12,6 +13,7 @@ Welcome to the official Gen7 Engine documentation.
 
 ### Connect
 
+Get Gen7 on https://gen7.idpowered.com
 Discord: https://discord.gg/pXdeUqb  
 Twitter: https://twitter.com/iyenal222  
 
