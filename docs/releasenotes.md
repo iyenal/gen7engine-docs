@@ -2,11 +2,22 @@
 
 Full release information can be found in the release Discord server: https://discord.gg/pXdeUqb
 
-### PSPHDC22 - 13/03/2022
+### Gen7 2018 (Legacy pre-2021)
+
+Gen7 2018 Release announcement: https://gbatemp.net/threads/gen7-engine-visual-programming-engine-for-switch.522648/ - https://www.vg-resource.com/thread-35325.html
+
+### Gen7.1 2019 (Legacy pre-2021)
+
+Gen7.1 2019 Release announcement: https://gbatemp.net/threads/gen7-1-engine-free-edition-visual-programming-for-switch-wii-and-windows-new-features-free.539320/ (Frontpage: https://gbatemp.net/threads/gen7-1-engine-visual-programming-for-switch-wii-and-windows-new-major-edition.534418/ )
+
+### Gen7.2 2020 (Legacy pre-2021)
+Gen7.2 2020 Release announcement: https://gbatemp.net/threads/gen7-2-engine-free-edition-visual-programming-for-switch-wii-windows-and-web-new-features-free.561756/
+
+### Gen7.4 PSPHDC22 - 13/03/2022
 
 Micropython port to Wii
 
-### PSPHDC22 - 18/08/2022
+### Gen7.4 PSPHDC22 - 18/08/2022
 
 Micropython port to PSP  
 PSPHDC22 Presentation: https://www.youtube.com/watch?v=E6X1y7F8St8  
