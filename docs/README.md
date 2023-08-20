@@ -11,8 +11,9 @@ Welcome to the official Gen7 Engine documentation.
 ### Connect
 
 Discord: https://discord.gg/pXdeUqb  
-Twitter: https://twitter.com/iyenal222
+Twitter: https://twitter.com/iyenal222  
 
+Github: https://github.com/iyenal  
 Youtube: https://www.youtube.com/@idstudioYT
 
 Gen7 Engine is available as a private open beta for Windows and Linux OSs, and supports publishing to Windows, Linux, Wii, PSP, Switch and Gamecube.
