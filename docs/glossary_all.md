@@ -4,11 +4,9 @@ Following are all the methods you can use in Gen7. In case of new additions, it'
 
 Note that Micropython modules are available too:
 
-Math support: https://docs.micropython.org/en/v1.11/library/math.html
-
-Random generation support: https://docs.micropython.org/en/latest/library/random.html (available as import urandom -> urandom.randrange(...))
-
-JSON support: https://docs.micropython.org/en/v1.11/library/ujson.html
+Math support: https://docs.micropython.org/en/v1.11/library/math.html \  
+Random generation support: https://docs.micropython.org/en/latest/library/random.html (available as import urandom -> urandom.randrange(...))\  
+JSON support: https://docs.micropython.org/en/v1.11/library/ujson.html\  
 
 ```python
 checkCollisionState();
