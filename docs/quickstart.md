@@ -25,8 +25,4 @@ You'll find several windows, each dedicated to a part of your project! Let's see
 - Project Logs: your project and engine logs for informative and debugging purposes.
 
 > We can open other projects with File/Open Projects.
-> By default, it opens the project in "project" folder next to IDE executable.
-
-Now let's start by creating a simple project:
-
-[TODO: Add screens and description]
+> By default, it opens the 2D Platformer project in "project" folder next to IDE executable.
