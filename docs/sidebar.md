@@ -4,6 +4,7 @@
   - [Read this](generalinfo.md)
   - [Tips & Tricks](tips_and_tricks.md)
 - Glossary
+  - [All (Most Updated)](glossary_all.md)
   - [Methods](glossary_methods.md)
   - [Objects](glossary_objects.md)
 - Tutorials
