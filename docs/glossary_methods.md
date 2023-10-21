@@ -1,4 +1,7 @@
-These methods are available either in Python or Visual Programming blocks, and are interfaced to the internal engine API for best performance:
+### Main available methods
+
+The following methods are available either in Python or Visual Programming blocks, and are interfaced to the internal engine API for best performance.
+However this may not represent all the calls available, so please check (Complete Glossary)[glossary_all.md] to have all the calls on hand.
 
 **Internal/External assets:**
 
