@@ -1,42 +1,8 @@
 You may ask yourself, actually what Gen7 provides me to create my marvellous game?  
-This glossary of assets supported will help you answer this.  
- 
+This glossary of assets supported will help you figure out.  
 
-## Primitives
 
-**Description:**  
-Basic 3D primitives.
-
-**Usage:**  
-Create the primitive with the following calls and chose a name that will be used to instantiate them.
-
-**Code/Blocks:**
-
-```python
-createAssetPlane(Text name);  
-createAssetTeapot(Text name);  
-createAssetCone(Text name);  
-createAssetTorus(Text name);  
-createAssetSphere(Text name);  
-createAssetCube(Text name);  
-```
-
-**Example:**
-
-```python
-# Create our primitive library
-createAssetCube("cube")
-createAssetPlane("plane")
-createAssetSphere("sphere")
-createAssetTeapot("teapot")
-createAssetCone("cone")
-createAssetTorus("torus")
-
-# Create a scene object named "obj1" and using a plane with coordinates posX, pY, pZ, rotationX, rY, rZ, scaleX, scaleY, scaleZ
-createObjectwithRotationScale("obj1", "plane", 0.0, 1.0, \-20.0, 90.0, 0, 0, 5, 1.0, 6)
-```
-
-## Textures
+## Textures/Sprites
 
 **Description:**  
 Texture to be used on sprites or specific objects.
@@ -54,10 +20,70 @@ createAssetTexture(Text name, Text filename);
 
 ```python
 # Create our texture asset
-createAssetTexture("fonttexture", "spritefont.png")
+createAssetTexture('bg','bg.png')
 
-# Create a spritefont object in our scene with the previous texture
-createSpritefontText("my\_text", 20, 20, 30, 0.6, 1, 26, str(x), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "fonttexture")
+# Create a background sprite object with a -10 layer
+createSprite('BACKGROUND','bg',0,0,640,480,(-10))
+```
+
+
+## Spritesheet
+
+**Description:**  
+Spritesheet containing several sprites in one image, to create Spritefont, Tilesets, or Sprite Animation objects.
+
+**Usage:**  
+Create the Spritesheet asset, then use it in createSpritefontText, createTileset or createSprite followed by setSpriteAnim/createSpriteWithAnim for a sprite animation.
+
+**Code/Blocks:** 
+
+```python 
+createAssetSpriteSheet(Name,lines,columns,condens,fontface,filename);
+```
+
+**Example:**
+
+```python
+
+# Create a spritesheet animation, using an image containing 26 sprites in 1 line:
+createAssetSpriteSheet("check", 1, 26, "", "", "checkpoint.png");	
+createSpriteWithAnim("check", "check", 200, 200, 80, 80, 1, 4, 1);
+# 1: loop enabled, 4: change frame every 4 frames
+
+# Create a spritesheet font, with a specific condensation configuration (each sprite takes a specific size, such as "[2,4,1]" -> 1st sprite will take 2 times more space than the third, 2nd will take 4 times more than the third) and the fontface to refer to it when creating the text. You can use the GiveYourFonts utility (https://shatter-box.com/download/giveyourfontsmono/) to generate a spritefont, and its condensation in JSON file.
+createAssetSpriteSheet("font", 1, 26, "[2,1,1,1,3,1,1,4]", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "spritefont2.png");
+createSpritefontTextNew("font_text", 20, 150, 20, 100, "AHELLO", "font");
+# Create a tileset with the same font, with [0, 1, 2, 3, -2, 0, 1, -1, 2] for the frames (-2 for line jump, -1 for space)
+createTilesetNew("tileset", 300, 100, 20, 1, "[0, 1, 2, 3, -2, 0, 1, -1, 2]", "font");
+```
+
+
+## 3D Primitive
+
+**Description:**  
+Primitives as basic 3D shapes, to experiment or collision eg. build collision cubes.
+
+**Usage:**  
+Create the asset primitive with the according call (createAssetCube(Name)...), and then create the object using the asset with the wanted coordinates.
+
+**Code/Blocks:** 
+
+```python 
+createAssetCube(Text name)
+createAssetTeapot(Text name)
+...
+```
+
+**Example:**
+
+```python
+# Create our texture asset
+createAssetCube("cube");
+
+# Create a cube platform, hide it and add it to collision lists
+createObjectwithScale("Platform", "cube",-4.1471,0.0239,-0.1399,7.8596,8.1615,0.0655);
+hideObject("Platform");
+addToCollisionList("Platform");
 ```
 
 ## 3D Assets
@@ -69,9 +95,7 @@ createSpritefontText("my\_text", 20, 20, 30, 0.6, 1, 26, str(x), "ABCDEFGHIJKLMN
 Name the asset imported with "name" to be referenced by other objects, and filename for the model's filename (Wavefront .OBJ); to be placed next to the executable.  
 Materials file .MTL and textures in common formats will be automatically imported.
 
-> Quote
-> 
-> ![❗](https://twemoji.maxcdn.com/2/72x72/2757.png)_createAssetModel_ automatically creates objects for each shape contained in the model at scene's origin to render it; to modify its properties use Object Management methods (_moveObjectwithRotationScale, disableObject...,_ please refer to the methods glossary) with the shape material name to refer independently to the objects.
+> ❗ _createAssetModel_ automatically creates objects for each shape contained in the model at scene's origin to render it; to modify its properties use Object Management methods (_moveObjectwithRotationScale, disableObject...,_ please refer to the methods glossary) with the shape material name to refer independently to the objects.
 
 **Code/Blocks:**
 
