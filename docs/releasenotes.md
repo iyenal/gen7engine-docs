@@ -49,16 +49,53 @@ Method setSprite and moveSprite now obsolete, replaced by the more generic setOb
 Implemented collision system for 2D objects, fixed incorrect returns by getObjectSX/SY for sprites
 Implemented 2 collision modes: by axis, the engine automatically corrects the object's position to respect the collision while keeping most of the wanted movement, or normal collision
 
-### 07/01/2022
+### 07/01/2023
 
 Important change: all assets must be now in an "assets" folder next to executable
 Blender plugin for automatic box colliders exports
 
-### 22/01/2022
+### 22/01/2023
 
 Repository for plugins
 
-### 02/02/2022
+### 02/02/2023
 
 - Added high-DPI screens support (4k monitors+)
 - Fixed file encoding issues 
+
+### 20/04/2023
+
+- New: Unsaved warning for ScriptFlow
+- New: ScriptFlow's Misc actions
+- Fixed crash when playing
+- Fixed empty project opening
+- Fixed crash encoding on std output
+- Fixed collision collection
+- Controls system rewritten
+(multiple keys at once supported, proper triggers bitwise based)
+- Critical: Linux version doesn't launch
+
+### 09/08/2023
+
+- Updated Wii, PSP, Switch console builds (@Vastdetail report)
+- Added IDE crash logger
+- Added documentation page on general issues: https://iyenal.github.io/gen7engine-docs/#/generalinfo
+
+### 10/09/2023
+
+- Linux IDE version release
+
+### 18/10/2023
+
+- New: Object Hierarchy: View all the objects, assets and their properties loaded in your Scene's through Preview
+- New: Project Mode Switcher: Gen7 Engine now automatically detects if your project is in Python scripting mode or Visual Programming mode, and will show a warning to prevent unintentional modifications
+- Several bugfixes: Memory management issues fixed, several IDE stability fixes, no preview at startup
+
+### 05/10/2023
+
+- More methods for sprite manipulation: setSprite, setSpriteCoords
+- Better tileset support
+- Better spritefont support (with individual spacing)
+- New sprite animation support
+- New templates
+- Improved Nintendo Switch support
