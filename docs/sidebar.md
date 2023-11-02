@@ -9,5 +9,6 @@
   - [Objects](glossary_objects.md)
 - Tutorials
   - [Procedural programming](tutorials_procedural.md)
+  - [Script Examples](script_examples.md)
 - Advanced
   - [Create your own plugin](advanced_createyourownplugins.md)
