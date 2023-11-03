@@ -1,8 +1,9 @@
 ![](icon.png)
 
-# **Gen7 Engine Documentation**
+# **Gen7 Engine Guide**
 
-Welcome to the official Gen7 Engine documentation.
+Welcome to the official Gen7 Engine documentation and guide.
+Before to start, it's highly recommended to read all the pages. It's short and necessary to develop your projects!
 
 - Starting with Gen7? Check out the **Getting Started** section, and continue with **Tutorials**.
 - Creating plugins to extend Gen7? Follow the guide in **Advanced** .
@@ -16,4 +17,4 @@ Twitter: https://twitter.com/iyenal222
 Github: https://github.com/iyenal  
 Youtube: https://www.youtube.com/@idstudioYT
 
-Gen7 Engine is available as a private open beta for Windows and Linux OSs, and supports publishing to Windows, Linux, Wii, PSP, Switch and Gamecube.
+Gen7 Engine is available as a public open beta for Windows and Linux OSs, and supports publishing to Windows, Linux, Wii, PSP, Switch and Gamecube.
