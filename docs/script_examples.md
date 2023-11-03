@@ -3,8 +3,43 @@ These can be recreated in Visual Programming with the corresponding blocks.
 
 ## Collectable Objects
 
-## Nice Scene Transition
+**Description:**  
+Collect all objects whose names starts by 'coin', and delete them in the scene.
 
+**Usage:**  
+Copy and paste directly the code. Add code for player movements (or use directly the 2d_platformer) template.
+
+**Script:**
+
+```python
+coins = 0
+
+def start():
+  setTargetFPS(60)
+
+  createAssetTexture('pl_str','2d_player.png')
+  createAssetTexture('coin_sp','2d_coin.png')
+
+  createSprite('player','pl_str',70,200,50,50,0)
+  createSprite('coin01','coin_sp',200,100,50,50,0)
+  createSprite('coin02','coin_sp',350,100,50,50,0)
+  addToCollisionList('coin01')
+  addToCollisionList('coin02')
+  setCollisionController('player',0)
+
+def update():
+  global coins
+
+  # Move the Player with your code
+  # [CODE]
+  # eg. moveSprite('player',x,y,layer), check 2d_platformer template for complete example
+  
+  # If last collision is a collision with an object that starts with "coin" name
+  if isObjectClass('coin',(getLastCollisionName())):
+    deleteObject((getLastCollisionName()))
+    coins = coins + 1
+```
+    
 ## Orbit in 3D space
 
 **Description:**  
@@ -135,3 +170,5 @@ def update():
   if isObjectClass('coin',(getLastCollisionName())):
     deleteObjectClass((getLastCollisionName()))
 ```
+
+## Nice Scene Transition
