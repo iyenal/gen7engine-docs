@@ -2,6 +2,10 @@
 
 Read this to make sure to use Gen7 Engine correctly and without issues.
 
+### 2D Space
+
+Gen7 use a right-hand rule, with the X axis on the horizontal axis, and Y on the vertical axis. It starts with (X:0, Y:0) at the bottom left to (X: 640px, Y: 480px) at the top right, and all objects origin are at the bottom left of the sprite. The ratio is universal (4:3), but Gen7 adapts automatically your scene for 16:9 displays.
+
 ### Test your homebrew on real hardware, not on emulators
 
 It's recommended to test your homebrew on real hardware, as emulators tends to not reproduce the real behavior, add issues that don't exist otherwise. Plus most emulators are designed to emulate games by optimizing performance while sacrifying accuracy.
