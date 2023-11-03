@@ -1,6 +1,7 @@
 # Quick start
 
 You downloaded Gen7 Engine and now you're ready to enter the beautiful world of homebrews? Welcome!
+Before to start, it's highly recommended to read all the guide/docs pages. It's short and necessary to develop your projects!
 
 Start by running the IDE (IDE.exe):
 ![](gen7.png)
