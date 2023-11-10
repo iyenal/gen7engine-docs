@@ -9,7 +9,6 @@ Random generation support: https://docs.micropython.org/en/latest/library/random
 JSON support: https://docs.micropython.org/en/v1.11/library/ujson.html  
 
 ```python
-/* This file was automatically generated.  Do not edit! */
 createAssetSkybox(Text s1,Text s2,Text s3,Text s4,Text s5,Text s6);
 createAssetPlane(Text name);
 createAssetTeapot(Text name);
