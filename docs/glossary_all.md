@@ -9,19 +9,8 @@ Random generation support: https://docs.micropython.org/en/latest/library/random
 JSON support: https://docs.micropython.org/en/v1.11/library/ujson.html  
 
 ```python
-createAssetSkybox(Text s1,Text s2,Text s3,Text s4,Text s5,Text s6);
-createAssetPlane(Text name);
-createAssetTeapot(Text name);
-createAssetCone(Text name);
-createAssetTorus(Text name);
-createAssetSphere(Text name);
-createAssetCube(Text name);
-createAssetModel(Text name,Text filename);
-createAssetParticle(Text name,Text filename,int ParticleCount,int FrameCount,float scaleParticle);
-createAssetSpriteSheet(Text name,int lines,int columns,Text condens,Text fontface,Text filename);
-createAssetTexture(Text name,Text filename);
-checkCollisionState(); # Internal but can be used for tricks (force collision calculation manually)
-saveCollisionState(); # Internal but can be used for tricks (force collision calculation manually)
+checkCollisionState();
+saveCollisionState();
 setCollidedUniqueName(Text newName);
 Text getLastCollisionName();
 int getLastCollisionID();
@@ -49,6 +38,17 @@ int isButtonY();
 int isButtonX();
 int isButtonB();
 int isButtonA();
+createAssetSkybox(Text s1,Text s2,Text s3,Text s4,Text s5,Text s6);
+createAssetPlane(Text name);
+createAssetTeapot(Text name);
+createAssetCone(Text name);
+createAssetTorus(Text name);
+createAssetSphere(Text name);
+createAssetCube(Text name);
+createAssetModel(Text name,Text filename);
+createAssetParticle(Text name,Text filename,int ParticleCount,int FrameCount,float scaleParticle);
+createAssetSpriteSheet(Text name,int lines,int columns,Text condens,Text fontface,Text filename);
+createAssetTexture(Text name,Text filename);
 showObject(Text name);
 hideObject(Text name);
 enableObject(Text name);
@@ -83,8 +83,6 @@ float getObjectPY(Text name);
 float getObjectPX(Text name);
 int getObjectEnabled(Text name);
 int getObjectType(Text name);
-updateSpritefontText(Text name,int xpos,int ypos,int fontsize,int layer,float condens,int lines,int columns,Text text,Text fontface,Text spritefont);
-updateSprite(Text name,Text asset);
 refreshSpriteSheets();
 int getSpriteFrame(Text name);
 setSpriteFrameTex(Text name,int frame,int save);
@@ -133,6 +131,8 @@ moveCamera2D(float x,float y);
 setCamera2D(float x,float y);
 moveCamera(float x,float y,float z,float rx,float ry,float rz);
 setCamera(float x,float y,float z,float rx,float ry,float rz);
+LoadScene(Text folder_scene);
+LoadSceneAssets(Text folder_scene);
 CleanAllScene();
 CleanAllModels();
 ```
