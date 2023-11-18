@@ -20,10 +20,10 @@ Use setTargetFPS(XX) to make sure that your update code (code that's executed re
 That way you're sure that even by targeting multiple platforms and therefore multiple performance rates, the behavior will be identical.
 You can also monitor performance with "timeSinceStartup()" and "timeSinceFrameMs()".
 
-### Save files, JSON parsing, get from internet
+### Save files, JSON parsing
 
-Gen7 Engine has a Python JSON parsing library available through "import json". This can be used too with the experimental "download file" function calls.
-You can also save files in case you want for example to have savegames, and then read them as a text (string).
+You can save files in case you want for example to have savegames, or to load levels, and then read them as a text (string) with openFile().
+Gen7 Engine also has a Python JSON parsing library available through "import json".
 
 ### IDE crash logs
 
