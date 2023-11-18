@@ -1,6 +1,6 @@
 # Tips & Tricks
 
-Some tips that will save you time and evergy when using Gen7.
+Some tips that will save you time and energy when using Gen7.
 
 ### Using an External Code Editor
 
@@ -13,6 +13,7 @@ When you're not sure a specific block of code is reached, being involved by a sp
 ### Automatic Preview, Quick Camera Tests
 
 You can automatically generate a new preview when you save your script or visual program, just enable the Auto Preview checkbox (next to the Preview button). You can also enable the camera toolbox (bottom of Preview), to directly change its parameters there and check immediately the result. Just make sure that your program doesn't have a "setCamera" call that would otherwise override the toolbox camera setup.
+In case of scenes, the Preview will automatically preview the current scene loaded. Make sure before to build to set the project in the main scene, so in the final build the application/game will start with it.
 
 ### Delta time? Ensure the same behavior no matter the framerate
 
