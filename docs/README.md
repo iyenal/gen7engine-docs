@@ -1,6 +1,6 @@
 ![](icon.png)
 
-# **Gen7 Engine Guide**
+# **Leap (Gen7) Engine Guide**
 
 Welcome to the official Gen7 Engine documentation and guide.
 Before to start, it's highly recommended to read all the pages. It's short and necessary to develop your projects!
