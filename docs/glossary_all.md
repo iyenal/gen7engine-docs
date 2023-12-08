@@ -44,7 +44,7 @@ createAssetCone(Text name);
 createAssetTorus(Text name);
 createAssetSphere(Text name);
 createAssetCube(Text name);
-Text createAssetTiled(Text filename); // Returns the tileset data (text) to be used directly in createTileset
+Text createAssetTiled(Text filename); # Returns the tileset data (text) to be used directly in createTileset
 createAssetModel(Text name,Text filename);
 createAssetParticle(Text name,Text filename,int ParticleCount,int FrameCount,float scaleParticle);
 createAssetSpriteSheet(Text name,int lines,int columns,Text condens,Text fontface,Text filename);
@@ -69,8 +69,8 @@ float getCameraRX();
 float getCameraPZ();
 float getCameraPY();
 float getCameraPX();
-// getClass returns objects that start with the name, while others return only ones that have the exact same
-// Returns a string in the form “3,4,5” for IDs 3, 4 and 5 for example. Just use “IntArray=[int(i) for i in getObject.split(‘,’)]” to convert it to an int array.
+# getClass returns objects that start with the name, while others return only ones that have the exact same
+# Returns a string in the form “3,4,5” for IDs 3, 4 and 5 for example. Just use “IntArray=[int(i) for i in getObject.split(‘,’)]” to convert it to an int array.
 Text getListSpritesClassID(Text name);
 Text getListObjectsClassID(Text name);
 Text getListSpritesID(Text name);
@@ -81,7 +81,7 @@ Text getSpriteName(int ID);
 Text getObjectName(int ID);
 int getObjectID(Text name);
 float getSpriteLayer(Text name);
-float getObjectSZ(Text name); // All getObject works with sprites too
+float getObjectSZ(Text name); # All getObject works with sprites too
 float getObjectSY(Text name);
 float getObjectSX(Text name);
 float getObjectRZ(Text name);
@@ -136,11 +136,11 @@ int timeGetFPS();
 int timeUpdateFPS();
 setTargetFPS(int tF);
 float timeSinceFrameMs();
-int timeSinceStartup(); // Is resetted at scene change
+int timeSinceStartup(); # Is resetted at scene change
 Text getPlatform();
 
-checkCollisionState(); // Internal, is automatically called
-saveCollisionState(); // Internal, is automatically called
+checkCollisionState(); # Internal, is automatically called
+saveCollisionState(); # Internal, is automatically called
 setCollidedUniqueName(Text newName);
 Text getLastCollisionName();
 int getLastCollisionID();
