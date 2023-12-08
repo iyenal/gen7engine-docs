@@ -1,20 +1,20 @@
 **Access the documentation on Github Pages:** https://iyenal.github.io/gen7engine-docs/
 
-**Get Gen7 Engine on** https://gen7.idpowered.com
+**Get Gen7 Engine on** https://leapengine.idpowered.com
 
 ![](icon.png)
 
-# **Gen7 Engine Documentation and Guide**
+# **Leap Engine (was Gen7) Documentation and Guide**
 
 Welcome to the official Gen7 Engine documentation.
 
-- Starting with Gen7? Make sure to read all the Documentation pages. They're short and necessary to create your projects properly.
-- Creating plugins to extend Gen7? Follow the guide in **Advanced** .
-- Want to contribute to the docs? Share your improvements in the Github repository github.com/gen7engine-docs
+- Starting with Leap? Make sure to read all the Documentation pages. They're short and necessary to create your projects properly.
+- Creating plugins to extend Leap? Follow the guide in **Advanced** .
+- Want to contribute to the docs? Share your improvements in the Github repository github.com/gen7engine-docs with commits and issues
 
 ### Connect
 
-Get Gen7 on https://gen7.idpowered.com
+Get Leap on https://leapengine.idpowered.com
 Discord: https://discord.gg/pXdeUqb  
 Twitter: https://twitter.com/iyenal222  
 
