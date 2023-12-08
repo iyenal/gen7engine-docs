@@ -1,6 +1,6 @@
 **Access the documentation on Github Pages:** https://iyenal.github.io/gen7engine-docs/
 
-**Get Gen7 Engine on** https://leapengine.idpowered.com
+**Get Leap Homebrew Engine on** https://leapengine.idpowered.com
 
 ![](icon.png)
 
