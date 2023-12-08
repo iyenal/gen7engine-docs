@@ -18,4 +18,4 @@ Get Leap on https://leapengine.idpowered.com
 Discord: https://discord.gg/pXdeUqb  
 Twitter: https://twitter.com/iyenal222  
 
-Gen7 Engine is available as a public open beta for Windows and Linux OSs, and supports publishing to Windows, Linux, Wii, PSP, Switch and Gamecube.
+Leap Homebrew Engine is available as a public open beta for Windows and Linux OSs, and supports publishing to Windows, Linux, Wii, PSP, Switch and Gamecube.
