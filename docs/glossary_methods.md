@@ -50,7 +50,7 @@ setSpriteFrame(Text name,int frame);
 setSpriteAsset(Text name,Text asset);
 moveSprite(Text name,float x,float y,int layer);
 setSpriteCoords(Text name,float t0,float t1,float t2,float t3);
-setSpritePos(Text name,float x,float y,float sX,float sY,int layer);
+setSpritePos(Text name,float x,float y);
 setSprite(Text name,float x,float y,float sX,float sY,int layer);
 setSpritefontText(Text name,Text text);
 deleteSpritefontText(Text name);
