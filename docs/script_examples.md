@@ -1,6 +1,123 @@
 Use these script examples and templates to help you develop parts of your game/application.
 These can be recreated in Visual Programming with the corresponding blocks.
 
+## Scene Transition
+
+**Description:**  
+Cool scene transition with circular opening/closing animation.
+![image](https://github.com/iyenal/gen7engine-docs/assets/14296095/dd382de7-977f-4561-8d2f-f6165de809f9)
+
+**Usage:**  
+Copy and paste the script at top of your script. 
+Then use in your start method to start it closed and get it to open:
+```python
+def start():
+    global tr
+    tr = TransitionAnim()
+    tr.initClosed()
+    tr.startOpen()
+```
+If you wish to close it and go to another Scene:
+```python
+def update():
+    tr.update()
+    global go_to_level # create a go_to_level = 0 after "tr = None" so we can load the scene after the transition is finished
+    if(isTriggerA()):
+        tr.startClose()
+        go_to_level = timeSinceStartup()
+
+    if(go_to_level != -1 and timeSinceStartup() > go_to_level+5 ): # Go to level 5 secs after it clicked A button (time that transition anim finishes)
+        LoadScene("assets/first_level/")
+```
+Make sure to have "tr.update()" in your update method.
+
+**Script:**
+
+```python
+
+class TransitionAnim:
+    anim_trans = 1001
+    def __init__(self):
+        createAssetTexture("transition", "anim_transition.png");
+        pass
+
+    def initClosed(self):
+        size = 1000;
+        createSprite("trans", "transition", 320-(size/2),240-(size/2),size,size,100);
+        createSpriteWithColor("trans_top", "", -(size/2), 240 + (size/2) -5,1000,1000,  28,28,28,  100); # TOP, +15 to hide thin lines (because pixel precision)
+        createSpriteWithColor("trans_bot", "", -(size/2), 240 - (size/2) -1000 +5,1000,1000,   28,28,28,   100); # BOTTOM
+        createSpriteWithColor("trans_right", "", 320+(size/2) - 5, -100,1000,1000,   28,28,28,   100); # RIGHT
+        createSpriteWithColor("trans_left", "", 320-(size/2)-1000 +5, -100,1000,1000,   28,28,28,  100); # LEFT
+
+        size = 1;
+        setSprite("trans", 320-(size/2),240-(size/2),size,size,  100);
+        setSprite("trans_top", -(size/2), 240 + (size/2) -2,1000,1000,  100); # TOP, +15 to hide thin lines (because pixel precision)
+        setSprite("trans_bot", -(size/2), 240 - (size/2) -1000 +2,1000,1000,  100); # BOTTOM
+        setSprite("trans_right",320+(size/2) - 2, -100,1000,1000,   100); # RIGHT
+        setSprite("trans_left", 320-(size/2)-1000 +2, -100,1000,1000,   100); # LEFT
+        pass
+
+    def initOpen(self):
+        size = 1000;
+        createSprite("trans", "transition", 320-(size/2),240-(size/2),size,size,100);
+        createSpriteWithColor("trans_top", "", -(size/2), 240 + (size/2) -5,1000,1000,  28,28,28,  100); # TOP, +15 to hide thin lines (because pixel precision)
+        createSpriteWithColor("trans_bot", "", -(size/2), 240 - (size/2) -1000 +5,1000,1000,   28,28,28,   100); # BOTTOM
+        createSpriteWithColor("trans_right", "", 320+(size/2) - 5, -100,1000,1000,   28,28,28,   100); # RIGHT
+        createSpriteWithColor("trans_left", "", 320-(size/2)-1000 +5, -100,1000,1000,   28,28,28,  100); # LEFT
+
+        size = 1000;
+        setSprite("trans", 320-(size/2),240-(size/2),size,size,  100);
+        setSprite("trans_top", -(size/2), 240 + (size/2) -2,1000,1000,  100); # TOP, +15 to hide thin lines (because pixel precision)
+        setSprite("trans_bot", -(size/2), 240 - (size/2) -1000 +2,1000,1000,  100); # BOTTOM
+        setSprite("trans_right",320+(size/2) - 2, -100,1000,1000,   100); # RIGHT
+        setSpriteP("trans_left", 320-(size/2)-1000 +2, -100,1000,1000,   100); # LEFT
+
+    def startOpen(self):
+        if(self.anim_trans > -1):
+            self.anim_trans = -1
+
+    def startClose(self):
+        if(self.anim_trans < 0):
+            self.anim_trans = 0
+
+    def update(self):
+
+        if(self.anim_trans > -1000 and self.anim_trans < 1000):
+
+            # Close animation
+            if(self.anim_trans >= 0):
+                if(self.anim_trans == 0):
+                    pass
+
+                if(self.anim_trans > 0):
+                    size = 1000-self.anim_trans;
+                    setSprite("trans", 320-(size/2),240-(size/2),size,size,  100);
+                    setSprite("trans_top", -(size/2), 240 + (size/2) -2,1000,1000,  100); # TOP, +15 to hide thin lines (because pixel precision)
+                    setSprite("trans_bot", -(size/2), 240 - (size/2) -1000 +2,1000,1000,  100); # BOTTOM
+                    setSprite("trans_right",320+(size/2) - 2, -100,1000,1000,   100); # RIGHT
+                    setSprite("trans_left", 320-(size/2)-1000 +2, -100,1000,1000,   100); # LEFT
+
+                self.anim_trans+=5;
+
+            # Open animation
+            if(self.anim_trans <= -1):
+
+                if(self.anim_trans == -1):
+                    pass
+
+                if(self.anim_trans < -1):
+                    size = -self.anim_trans;
+                    setSprite("trans", 320-(size/2),240-(size/2),size,size,  100);
+                    setSprite("trans_top", -(size/2), 240 + (size/2) -2,1000,1000,  100); # TOP, +15 to hide thin lines (because pixel precision)
+                    setSprite("trans_bot", -(size/2), 240 - (size/2) -1000 +2,1000,1000,  100); # BOTTOM
+                    setSprite("trans_right",320+(size/2) - 2, -100,1000,1000,   100); # RIGHT
+                    setSprite("trans_left", 320-(size/2)-1000 +2, -100,1000,1000,   100); # LEFT
+
+                self.anim_trans-=5;
+
+tr = None
+```
+
 ## Collectable Objects
 
 **Description:**  
@@ -170,5 +287,3 @@ def update():
   if isObjectClass('coin',(getLastCollisionName())):
     deleteObjectClass((getLastCollisionName()))
 ```
-
-## Nice Scene Transition
