@@ -8,8 +8,6 @@ These plugins can be redistributed at your ease to extend Gen7 Engine.
 
 Gen7 Engine uses the official micropython interpreter implementation:
 
-> Quote
-> 
 > MicroPython implements the entire Python 3.4 syntax (including exceptions, with, yield from, etc., and additionally async/await keywords from Python 3.5 and some select features from later versions). The following core datatypes are provided: str(including basic Unicode support), bytes, bytearray, tuple, list, dict, set, frozenset, array.array, collections.namedtuple, classes and instances. Note that only a subset of Python 3 functionality is implemented for the data types and modules.  
 >   
 > Gen7 Engine uses _MICROPY\_CONFIG\_ROM\_LEVEL\_CORE\_FEATURES_ profile and all the modules related, provides the urandom module, and Gen7 API writeFile and openFile for file I/O.  
