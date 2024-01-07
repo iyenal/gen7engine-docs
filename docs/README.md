@@ -11,9 +11,6 @@ Before to start, it's highly recommended to read all the pages. It's short and n
 
 ### Connect
 
-Discord: https://discord.gg/pXdeUqb  
-Twitter: https://twitter.com/iyenal222  
-
 Github: https://github.com/iyenal  
 Youtube: https://www.youtube.com/@idstudioYT
 
