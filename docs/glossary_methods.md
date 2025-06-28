@@ -6,6 +6,8 @@ However this may not represent all the calls available, so please check (Complet
 ▶️ Undocumented or unavailable methods? Create an issue to have it added.  
 ▶️ Questions about some method usage? Create an issue to get more information.
 
+> Notice: Some functions got renamed (eg. related to Spritesheets), and this page may not reflect yet the updates. Please refer to the Glossary (All) page for the up-to-date function names
+
 **Internal/External assets:**
 
 ```python
