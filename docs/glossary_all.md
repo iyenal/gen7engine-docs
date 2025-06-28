@@ -2,6 +2,8 @@
 
 Following are all the methods you can use in Gen7. In case of new additions, it'll be updated first here, before being documented in Methods and Objects glossary.
 
+> Notice: Visual Programming (blocks) compatibility is currently out of phase with Spritesheets support. Update fixing the matter will be released soon. Meanwhile, please use classic Texture/Sprite blocks.
+
 Note that Micropython modules are available too:
 
 Math support: https://docs.micropython.org/en/v1.11/library/math.html  
