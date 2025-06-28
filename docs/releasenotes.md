@@ -99,3 +99,11 @@ Repository for plugins
 - New sprite animation support
 - New templates
 - Improved Nintendo Switch support
+
+### 28/06/2025
+
+- Several bugfixes
+- Scene Management
+- Included new projects
+- Fixed 3D collision
+- Updated obsolete information
