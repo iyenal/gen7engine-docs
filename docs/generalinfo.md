@@ -1,6 +1,6 @@
 # General Information
 
-Read this to make sure to use Gen7 Engine correctly and without issues.
+Read this to make sure to use Leap Engine correctly and without issues.
 
 ### Input Controls
 
