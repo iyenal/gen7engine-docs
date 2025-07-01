@@ -2,9 +2,13 @@
 
 Read this to make sure to use Gen7 Engine correctly and without issues.
 
+### Input Controls
+
+On Desktop platforms (Windows/Linux), use the keyboard for input, eg. WASD keys for directionnal controls plus POML keys for additional buttons (corresponds to XYAB).
+
 ### 2D Space
 
-Gen7 use a right-hand rule, with the X axis on the horizontal axis, and Y on the vertical axis. It starts with (X:0, Y:0) at the bottom left to (X: 640px, Y: 480px) at the top right, and all objects origin are at the bottom left of the sprite. The ratio is universal (4:3), but Gen7 adapts automatically your scene for 16:9 displays.
+Leap uses a right-hand rule, with the X axis on the horizontal axis, and Y on the vertical axis. It starts with (X:0, Y:0) at the bottom left to (X: 640px, Y: 480px) at the top right, and all objects origin are at the bottom left of the sprite. The ratio is universal (4:3), but Gen7 adapts automatically your scene for 16:9 displays.
 
 ### Test your homebrew on real hardware, not on emulators
 
